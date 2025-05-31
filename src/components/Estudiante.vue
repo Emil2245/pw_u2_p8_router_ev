@@ -48,6 +48,7 @@
 
 <script>
 export default {
+  
     data() {
         return {
             nuevoNombre: 'Emil',
@@ -99,7 +100,39 @@ export default {
 
         }
 
-    }
+    },
+      beforeCreate() {
+        console.log('beforeCreate')
+    },
+    created() {
+        console.log('created')
+    },
+    beforeMount() {
+        console.log('beforeMount')
+    },
+    mounted() {
+        
+        const cedula = this.$route.params.cedula;
+        // this.nuevaCedula = cedula
+        
+        const requestParam = this.$route.query.anio;
+        const requestParam2 = this.$route.query.mes;
+        // this.nuevoAnio = requestParam
+        // this.nuevoMes = requestParam2
+        
+        console.log(requestParam)
+        console.log(requestParam2)
+        console.log('mounted')
+    },
+    beforeUpdate() {
+        console.log('beforeUpdate')
+    },
+    updated() {
+        console.log('updated')
+    },
+    beforeUnmount() {
+        console.log('beforeUnmount')
+    },
 
 }
 </script>
@@ -146,7 +179,7 @@ input:enabled {
 }
 
 * {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
 }
 
 button {
