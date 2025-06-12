@@ -1,4 +1,5 @@
 <template>
+  {{ this.mensaje1 }}
   <div class="image-container">
     <img
       class="ocultar"
@@ -28,7 +29,7 @@
     },
     data() {
       return {
-        mostrar: false,
+        mensaje1: "mensaje1",
       };
     },
     computed: {
