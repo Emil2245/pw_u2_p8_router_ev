@@ -44,6 +44,12 @@ const routes = [
       import(/* webpackChunkName: "pokemon" */ "@/views/PokemonView.vue"),
   },
   {
+    path: "/responsivo",
+    name: "responsivo",
+    component: () =>
+      import(/* webpackChunkName: "pokemon" */ "@/views/ResponsivoView.vue"),
+  },
+  {
     path: "/carro",
     name: "carro",
     component: CarroView,

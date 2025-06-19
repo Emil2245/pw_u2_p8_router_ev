@@ -11,6 +11,7 @@
       <router-link to="/hola-mundo">HolaMundo</router-link> |
       <router-link to="/clima">Clima</router-link> |
       <router-link to="/pokemon">Pokemon</router-link> |
+      <router-link to="/responsivo">Responsivo</router-link> |
     </nav>
   </div>
 </template>
