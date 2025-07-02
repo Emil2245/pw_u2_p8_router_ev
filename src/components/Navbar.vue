@@ -12,6 +12,8 @@
       <router-link to="/clima">Clima</router-link> |
       <router-link to="/pokemon">Pokemon</router-link> |
       <router-link to="/responsivo">Responsivo</router-link> |
+      <router-link to="/estudiante-api">EstudianteApi</router-link> |
+      <router-link to="/todos-estudiantes-api">TodosEstudiantesApi</router-link>
     </nav>
   </div>
 </template>

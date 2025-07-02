@@ -50,6 +50,20 @@ const routes = [
       import(/* webpackChunkName: "pokemon" */ "@/views/ResponsivoView.vue"),
   },
   {
+    path: "/estudiante-api",
+    name: "estudiante-api",
+    component: () =>
+      import(/* webpackChunkName: "pokemon" */ "@/views/EstudianteApiView.vue"),
+  },
+  {
+    path: "/todos-estudiantes-api",
+    name: "todos-estudiantes-api",
+    component: () =>
+      import(
+        /* webpackChunkName: "pokemon" */ "@/views/TodosEstudiantesApiView.vue"
+      ),
+  },
+  {
     path: "/carro",
     name: "carro",
     component: CarroView,
